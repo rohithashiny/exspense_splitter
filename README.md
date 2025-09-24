@@ -3,6 +3,7 @@
 
 # 💸 Expense Splitter
 [![Badge displaying View on GitHub with the GitHub logo in black and white](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/rohithashiny/exspense_splitter)
+
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
 ![Flask](https://img.shields.io/badge/Flask-Backend-lightgrey?logo=flask)  
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)  
@@ -50,16 +51,23 @@ Version Control: Git + GitHub
 
 ---
 
-📂 Project Setup
+## 🚀 Project Setup
 
-1️⃣ Clone the repo
-
-git clone https://github.com/rohithashiny/expense-splitter.git
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/rohitashiny/expense-splitter.git
 cd expense-splitter
 
 2️⃣ Install dependencies
 
-pip install flask
+pip install -r requirements.txt
+
+> ⚡ Don’t have requirements.txt yet? Just run:
+
+pip install flask sqlite3
+pip freeze > requirements.txt
+
+
 
 3️⃣ Run the server
 
@@ -70,75 +78,104 @@ Server runs on 👉 http://127.0.0.1:5000/
 
 ---
 
-📌 API Endpoints
+## 📌 API Endpoints
 
-👤 Users
+### 👤 Users
+- *Create User*
+```http
+POST /users
 
-POST /users → Add a new user
-
+Body (JSON)
 
 {
-  "name": "Nova",
-  "email": "nova@example.com"
+  "name": "Alice",
+  "email": "alice@example.com"
 }
 
-GET /users → List all users
+List Users
 
+
+GET /users
 
 
 ---
 
-💰 Expenses
+💸 Expenses
 
-POST /expenses → Add an expense (auto-split)
+Add Expense
 
+
+POST /expenses
+
+Body (JSON)
 
 {
   "user_id": 1,
-  "amount": 600,
+  "amount": 500,
   "description": "Dinner with friends"
 }
 
-GET /expenses → List all expenses
+List Expenses
 
-DELETE /expenses/<id> → Delete an expense
 
+GET /expenses
 
 
 ---
 
-🔗 Expense Shares
+🔀 Expense Shares
 
-GET /expense_shares → List all splits with user names
+Add Expense Share (optional if not auto-split)
 
+
+POST /expense_shares
+
+Body (JSON)
+
+{
+  "expense_id": 1,
+  "user_id": 2,
+  "amount": 250
+}
+
+List Expense Shares
+
+
+GET /expense_shares
 
 
 ---
 
 📊 Balances
 
-GET /balances → Show net balance for each user
+View Balances
 
+
+GET /balances
+
+Response Example
 
 {
-  "Nova": 300,
-  "roni": -300
+  "1": 250.0,
+  "2": -250.0
 }
 
 
 ---
 
-🤝 Settlements
+❌ Delete Expense
 
-GET /settlements → Show who owes whom
+Delete an Expense
 
 
-[
-  "Rovi owes Nova ₹300"
-]
-
+DELETE /expenses/<expense_id>
 
 ---
+
+This way:
+- Every endpoint has *copy-paste ready examples*.  
+- Recruiters/teammates don’t even need to guess the JSON body.  
+- Looks professional like real open-source projects.
 
 🧪 Testing
 
