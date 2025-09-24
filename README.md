@@ -53,7 +53,9 @@ Version Control: Git + GitHub
 ## 📸 API Screenshots
 
 ### 1) Users (POST /users, GET /users)
-![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/users.png)  
+![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/users.png
+
+)  
 Create and list users.
 
 ---

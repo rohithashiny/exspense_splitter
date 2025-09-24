@@ -289,5 +289,57 @@ def delete_expense(expense_id):
     finally:
         conn.close()
 
+# Users (Register new user) - REST + Signup alias
+@app.route('/users', methods=['GET', 'POST'])
+@app.route('/signup', methods=['POST'])  # alias for POST only
+def users():
+    conn = get_conn()
+    cur = conn.cursor()
+
+    if request.method == 'POST':
+        data = request.get_json()
+
+        # Insert with password now
+        cur.execute("INSERT INTO users (name, email, password) VALUES (?, ?, ?)", 
+                    (data['name'], data['email'], data['password']))
+        conn.commit()
+
+        return jsonify({"message": "User registered successfully"}), 201
+
+    else:  # GET -> list all users
+        cur.execute("SELECT id, name, email FROM users")  # hide password
+        users = [dict(row) for row in cur.fetchall()]
+        return jsonify(users)
+# ================== LOGIN ==================
+@app.route('/login', methods=['POST'])
+def login():
+    conn = get_conn()
+    cur = conn.cursor()
+
+
+
+
+    data = request.get_json()
+
+    cur.execute(
+        "SELECT id, name, email FROM users WHERE email = ? AND password = ?",
+        (data['email'], data['password'])
+    )
+    user = cur.fetchone()
+
+    if user:
+        return jsonify({
+            "message": "Login successful",
+            "user": dict(user)
+        }), 200
+    else:
+        return jsonify({"error": "Invalid email or password"}), 401
+
+
+
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
