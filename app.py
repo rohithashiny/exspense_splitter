@@ -212,7 +212,82 @@ def list_balances():
 @app.route('/balances', methods=['POST'])
 def post_balances():
     # POST behaves the same as GET here
-    return get_balances()
+    return list_balances()
+
+@app.route('/settlements', methods=['GET'])
+def settlements():
+    try:
+        conn = get_conn()
+        cur = conn.cursor()
+
+        # Get balances with names
+        cur.execute("SELECT id, name FROM users")
+        users = cur.fetchall()
+
+        balances = []
+        for user_id, name in users:
+            cur.execute("SELECT COALESCE(SUM(amount), 0) FROM expenses WHERE user_id=?", (user_id,))
+            paid = cur.fetchone()[0]
+
+            cur.execute("SELECT COALESCE(SUM(amount), 0) FROM expense_shares WHERE user_id=?", (user_id,))
+            owed = cur.fetchone()[0]
+
+            balances.append({"name": name, "balance": paid - owed})
+
+        # Split into payers (negatives) and receivers (positives)
+        payers = [b for b in balances if b["balance"] < 0]
+        receivers = [b for b in balances if b["balance"] > 0]
+
+        settlements = []
+        i, j = 0, 0
+
+        # Match payers to receivers
+        while i < len(payers) and j < len(receivers):
+            payer = payers[i]
+            receiver = receivers[j]
+
+            amount = min(-payer["balance"], receiver["balance"])
+
+            settlements.append(f"{payer['name']} owes {receiver['name']} ₹{amount:.2f}")
+
+            payer["balance"] += amount
+            receiver["balance"] -= amount
+
+            if payer["balance"] == 0:
+                i += 1
+            if receiver["balance"] == 0:
+                j += 1
+
+        return jsonify(settlements), 200
+
+    except Exception as e:
+        print("Error in GET /settlements:", e)
+        return jsonify({"error": "Internal server error"}), 500
+    finally:
+        conn.close()
+@app.route('/expenses/<int:expense_id>', methods=['DELETE'])
+def delete_expense(expense_id):
+    try:
+        conn = get_conn()
+        cur = conn.cursor()
+
+        # First delete related shares
+        cur.execute("DELETE FROM expense_shares WHERE expense_id=?", (expense_id,))
+
+        # Then delete the expense itself
+        cur.execute("DELETE FROM expenses WHERE id=?", (expense_id,))
+        conn.commit()
+
+        if cur.rowcount == 0:
+            return jsonify({"error": "Expense not found"}), 404
+
+        return jsonify({"message": f"Expense {expense_id} deleted successfully"}), 200
+
+    except Exception as e:
+        print("Error in DELETE /expenses:", e)
+        return jsonify({"error": "Internal server error"}), 500
+    finally:
+        conn.close()
 
 if __name__ == '__main__':
     app.run(debug=True)
