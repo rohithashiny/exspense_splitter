@@ -240,9 +240,9 @@ Use Thunder Client / Postman:
 
 ---
 
-🎯 How to Test
+##🎯 How to Test
 
-Use Thunder Client / Postman:
+###Use Thunder Client / Postman:
 
 1. Add a few users (/signup)
 
