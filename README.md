@@ -84,7 +84,7 @@ Mark a settlement/payments between users.
 
 ---
 
-##🔐 Authentication
+🔐 Authentication
 
 This project includes a simple authentication flow:
 
@@ -188,7 +188,7 @@ GET /expense_shares
 
 
 ---
-
+```
 📊 Balances
 
 View Balances
