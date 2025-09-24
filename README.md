@@ -8,8 +8,8 @@
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)  
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)  
 
-![Last Commit](https://img.shields.io/github/last-commit/rohithashiny/exspense-splitter?logo=git)  
-![Issues](https://img.shields.io/github/issues/rohithashiny/exspense-splitter?logo=github)  
+![Last Commit](https://img.shields.io/github/last-commit/rohithashiny/exspense_splitter?logo=git)  
+![Issues](https://img.shields.io/github/issues/rohithashiny/exspense_splitter?logo=github)  
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)  
 This is an internship project I’m building step by step while learning Flask, databases, and GitHub workflows.
 ---
