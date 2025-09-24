@@ -199,7 +199,7 @@ Use Thunder Client / Postman:
 
 📸 Screenshots
 ![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/users.png)
-
-
-
+![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/expenses.png)
+![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/expenses_shares.png)
+![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/balances.png)
 
