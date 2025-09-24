@@ -231,7 +231,7 @@ Use Thunder Client / Postman:
 
 ---
 
-## 🔐 Authentication
+🔐 Authentication
 
 This project includes a simple authentication flow:
 
