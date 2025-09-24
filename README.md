@@ -188,7 +188,7 @@ GET /expense_shares
 
 
 ---
-```
+
 📊 Balances
 
 View Balances
@@ -212,16 +212,10 @@ Delete an Expense
 
 
 DELETE /expenses/<expense_id>
-
+```
 ---
 
-This way:
-- Every endpoint has *copy-paste ready examples*.  
-- Recruiters/teammates don’t even need to guess the JSON body.  
-- Looks professional like real open-source projects.
-<img width="1531" height="329" alt="Screenshot 2025-09-24 172455" src="https://github.com/user-attachments/assets/93669d03-f3d6-4010-866a-006ae4450720" />
-<img width="1495" height="233" alt="Screenshot 2025-09-24 172431" src="https://github.com/user-attachments/assets/cd7fbc26-6dcb-40cb-bf0c-75070255a1aa" />
-<img width="1442" height="453" alt="Screenshot 2025-09-24 172356" src="https://github.com/user-attachments/assets/77793ccc-9e33-4519-9e73-3d25148ab738" />
+
 
 ##🧪 Testing
 
