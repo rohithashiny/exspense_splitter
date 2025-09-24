@@ -204,31 +204,31 @@ Use Thunder Client / Postman:
 
 
 ## 1) Users (POST /users, GET /users)
-![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/users.png)
+![Users API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/main/screenshots_splitter/users.png)
 Create and list users.
 
 ---
 
 ## 2) Expenses (POST /expenses, GET /expenses)
-![Expenses API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/expenses.png)
+![Expenses API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/main/screenshots_splitter/expenses.png)
 Add an expense and list all expenses.
 
 ---
 
 ## 3) Expense Shares (POST /expense_shares, GET /expense_shares)
-![Expense Shares API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/expenses_shares.png)
+![Expense Shares API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/main/screenshots_splitter/expenses_shares.png)
 Shows how expense shares are recorded (automatically split).
 
 ---
 
 ## 4) Balances (GET /balances)
-![Balances](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/balances.png)
+![Balances](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/main/screenshots_splitter/balances.png)
 Balances per user after splitting expenses (who owes whom).
 
 ---
 
 ## 5) Settlements (POST /settlements, GET /settlements)
-![Settlements](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/settlements.png)
+![Settlements](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/main/screenshots_splitter/settlements.png)
 Mark a settlement/payments between users.
 
 ---
