@@ -221,23 +221,6 @@ DELETE /expenses/<expense_id>
 
 Use Thunder Client / Postman:
 
-1. Add a few users
-
-
-2. Add expenses
-
-
-3. Check balances & settlements
-
-
-
-
----
-
-🎯 How to Test
-
-Use Thunder Client / Postman:
-
 1. Add a few users (/signup)
 
 
@@ -254,6 +237,7 @@ Use Thunder Client / Postman:
 🏁 Conclusion
 
 This project demonstrates:
+
 ✔ RESTful API design with Flask 
 
 ✔ Database relationships with SQLite
