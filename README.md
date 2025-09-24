@@ -50,46 +50,38 @@ Version Control: Git + GitHub
 
 📸 Screenshots
 
+## 📸 API Screenshots
 
-
-
-
-## 1) Users (POST /users, GET /users)
-![Users API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/users.png)
+### 1) Users (POST /users, GET /users)
+![Users API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/users.png)  
 Create and list users.
 
 ---
 
-## 2) Expenses (POST /expenses, GET /expenses)
-![Expenses API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/expenses.png)
+### 2) Expenses (POST /expenses, GET /expenses)
+![Expenses API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/expenses.png)  
 Add an expense and list all expenses.
 
 ---
 
-## 3) Expense Shares (POST /expense_shares, GET /expense_shares)
-![Expense Shares API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/expenses_shares.png)
+### 3) Expense Shares (POST /expense_shares, GET /expense_shares)
+![Expense Shares API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/expenses_shares.png)  
 Shows how expense shares are recorded (automatically split).
 
 ---
 
-## 4) Balances (GET /balances)
-![Balances API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/balances.png)
+### 4) Balances (GET /balances)
+![Balances API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/balances.png)  
 Balances per user after splitting expenses (who owes whom).
 
 ---
 
-## 5) Settlements (POST /settlements, GET /settlements)
-![Settlements API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/settlements.png)
+### 5) Settlements (POST /settlements, GET /settlements)
+![Settlements API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/settlements.png)  
 Mark a settlement/payments between users.
----
 
 
 
-
-
-
-
----
 
 ## 🚀 Project Setup
 
