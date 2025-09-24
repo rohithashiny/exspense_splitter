@@ -3,15 +3,15 @@
 
 # 💸 Expense Splitter
 
-[![GitHub Repo](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/rohithashiny/expense-splitter)
+[![GitHub Repo](https://img.shields.io/badge/View_on-GitHub-black?logo=github)][(https://github.com/rohithashiny/expense-splitter)]https://github.com/rohithashiny/exspense_splitter
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
 ![Flask](https://img.shields.io/badge/Flask-Backend-lightgrey?logo=flask)  
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)  
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)  
 
-![Last Commit](https://img.shields.io/github/last-commit/rohithashiny/expense-splitter?logo=git)  
-![Issues](https://img.shields.io/github/issues/rohithashiny/expense-splitter?logo=github)  
+![Last Commit](https://img.shields.io/github/last-commit/rohithashiny/exspense-splitter?logo=git)  
+![Issues](https://img.shields.io/github/issues/rohithashiny/exspense-splitter?logo=github)  
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)  
 This is an internship project I’m building step by step while learning Flask, databases, and GitHub workflows.
 ---
