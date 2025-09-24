@@ -59,7 +59,7 @@ Create and list users.
 ---
 
 ### 2) Expenses (POST /expenses, GET /expenses)
-![Expenses API](https://raw.githubusercontent.com/rohitashiny/expense-splitter/main/screenshots_splitter/expenses.png)  
+![Expenses API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/expenses.png)  
 Add an expense and list all expenses.
 
 ---
