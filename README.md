@@ -198,13 +198,6 @@ Use Thunder Client / Postman:
 ---
 
 📸 Screenshots
-<img width="1253" height="373" alt="Screenshot 2025-09-24 172330" src="https://github.com/user-attachments/assets/56441788-9454-4fe9-9ed3-4ee4cc52fad8" />
-
-<img width="1253" height="373" alt="Screenshot 2025-09-24 172330" src="https://github.com/user-attachments/assets/08ab4d93-8eb8-45a4-8a11-9ffa8b15302e" />
-
-<img width="1495" height="233" alt="Screenshot 2025-09-24 172431" src="https://github.com/user-attachments/assets/63cc97ff-0204-4334-aaa9-4fdcc844ec71" />
-
-<img width="1531" height="329" alt="Screenshot 2025-09-24 172455" src="https://github.com/user-attachments/assets/2a6ae94f-0d8e-4f86-8697-95b65659895e" />
 
 
 
