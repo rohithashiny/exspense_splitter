@@ -2,8 +2,7 @@
   
 
 # 💸 Expense Splitter
-
-![GitHub Repo](https://img.shields.io/badge/View_on-GitHub-black?logo=github)[(https://github.com/rohithashiny/expense-splitter)]
+[![Badge displaying View on GitHub with the GitHub logo in black and white](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/rohithashiny/exspense_splitter)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
 ![Flask](https://img.shields.io/badge/Flask-Backend-lightgrey?logo=flask)  
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)  
