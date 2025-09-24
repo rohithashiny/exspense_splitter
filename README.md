@@ -82,8 +82,17 @@ Balances per user after splitting expenses (who owes whom).
 ![Settlements API](https://raw.githubusercontent.com/rohithashiny/exspense_splitter/refs/heads/main/screenshots_splitter/settlements.png)  
 Mark a settlement/payments between users.
 
+---
 
+##🔐 Authentication
 
+This project includes a simple authentication flow:
+
+- *POST /signup* → Register a new user with name, email, and password.  
+- *POST /login* → Authenticate with email + password.  
+
+📝 Note: Passwords are stored in plain text for learning purposes.  
+In production, use a secure hashing library like bcrypt.
 
 ## 🚀 Project Setup
 
@@ -91,8 +100,8 @@ Mark a settlement/payments between users.
 ```bash
 git clone https://github.com/rohitashiny/expense-splitter.git
 cd expense-splitter
-
-2️⃣ Install dependencies
+---
+###2️⃣ Install dependencies
 
 pip install -r requirements.txt
 
@@ -101,9 +110,9 @@ pip install -r requirements.txt
 pip install flask sqlite3
 pip freeze > requirements.txt
 
+---
 
-
-3️⃣ Run the server
+###3️⃣ Run the server
 
 python app.py
 
@@ -112,7 +121,7 @@ Server runs on 👉 http://127.0.0.1:5000/
 
 ---
 
-📌 API Endpoints
+###📌 API Endpoints
 
 ### 👤 Users
 - *Create User*
@@ -231,12 +240,34 @@ Use Thunder Client / Postman:
 
 ---
 
-##🔐 Authentication
+🎯 How to Test
 
-This project includes a simple authentication flow:
+Use Thunder Client / Postman:
 
-- *POST /signup* → Register a new user with name, email, and password.  
-- *POST /login* → Authenticate with email + password.  
+1. Add a few users (/signup)
 
-📝 Note: Passwords are stored in plain text for learning purposes.  
-In production, use a secure hashing library like bcrypt.
+
+2. Add expenses (/expenses)
+
+
+3. Check balances & settlements
+
+
+
+
+---
+
+🏁 Conclusion
+
+This project demonstrates:
+✔ RESTful API design with Flask
+✔ Database relationships with SQLite
+✔ Basic authentication
+✔ Automatic expense splitting
+
+
+---
+
+✨ Built with ❤ by rohitashiny
+
+---
