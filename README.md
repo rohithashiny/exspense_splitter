@@ -217,7 +217,7 @@ DELETE /expenses/<expense_id>
 
 
 
-##🧪 Testing
+🧪 Testing
 
 Use Thunder Client / Postman:
 
@@ -234,9 +234,9 @@ Use Thunder Client / Postman:
 
 ---
 
-##🎯 How to Test
+🎯 How to Test
 
-###Use Thunder Client / Postman:
+Use Thunder Client / Postman:
 
 1. Add a few users (/signup)
 
@@ -254,9 +254,12 @@ Use Thunder Client / Postman:
 🏁 Conclusion
 
 This project demonstrates:
-✔ RESTful API design with Flask
+✔ RESTful API design with Flask 
+
 ✔ Database relationships with SQLite
+
 ✔ Basic authentication
+
 ✔ Automatic expense splitting
 
 
