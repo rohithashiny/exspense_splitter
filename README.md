@@ -231,3 +231,12 @@ Use Thunder Client / Postman:
 
 ---
 
+## 🔐 Authentication
+
+This project includes a simple authentication flow:
+
+- *POST /signup* → Register a new user with name, email, and password.  
+- *POST /login* → Authenticate with email + password.  
+
+📝 Note: Passwords are stored in plain text for learning purposes.  
+In production, use a secure hashing library like bcrypt.
