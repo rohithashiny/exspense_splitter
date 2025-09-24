@@ -214,7 +214,7 @@ This way:
 <img width="1495" height="233" alt="Screenshot 2025-09-24 172431" src="https://github.com/user-attachments/assets/cd7fbc26-6dcb-40cb-bf0c-75070255a1aa" />
 <img width="1442" height="453" alt="Screenshot 2025-09-24 172356" src="https://github.com/user-attachments/assets/77793ccc-9e33-4519-9e73-3d25148ab738" />
 
-🧪 Testing
+##🧪 Testing
 
 Use Thunder Client / Postman:
 
@@ -231,7 +231,7 @@ Use Thunder Client / Postman:
 
 ---
 
-🔐 Authentication
+##🔐 Authentication
 
 This project includes a simple authentication flow:
 
