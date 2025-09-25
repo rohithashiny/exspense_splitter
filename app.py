@@ -18,7 +18,7 @@ def get_user_id(username):
 
 @app.route("/")
 def home():
-    return "<h1>Welcome to Expense Splitter</h1><p><a href='/signup-page'>Signup</a> | <a href='/login-page'>Login</a></p>"
+    return render_template("index.html")
 
 # Serve Signup Page
 @app.route('/signup-page')

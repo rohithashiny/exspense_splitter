@@ -1,45 +1,67 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard - Expense Splitter</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <meta charset="utf-8" />
+  <title>Dashboard — Expense Splitter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h2>Welcome to Expense Splitter Dashboard</h2>
-  <button onclick="logout()">Logout</button>
+  <main class="container">
+    <h1>💸 Expense Splitter Dashboard</h1>
 
-  <hr>
+    <!-- Expense Form -->
+    <section>
+      <h2>Add Expense</h2>
+      <form id="expenseForm">
+        <label>
+          Amount:
+          <input type="number" name="amount" required />
+        </label>
+        <br />
 
-  <!-- Add Expense -->
-  <h3>Add Expense</h3>
-  <form id="expenseForm">
-    <input type="number" name="amount" placeholder="Amount" required><br>
-    <input type="text" name="description" placeholder="Description"><br>
+        <label>
+          Description:
+          <input type="text" name="description" placeholder="Optional" />
+        </label>
+        <br />
 
-    <label>Paid by:</label><br>
-    <select id="paidBy" name="paid_by" required></select><br>
+        <label>
+          Paid By:
+          <select id="paidBy"></select>
+        </label>
+        <br />
 
-    <label>Select Participants:</label><br>
-    <div id="participantsList"></div>
+        <h3>Participants:</h3>
+        <div id="participantsList"></div>
 
-    <button type="submit">Add Expense</button>
-  </form>
+        <button type="submit">➕ Add Expense</button>
+      </form>
+    </section>
 
-  <hr>
+    <hr />
 
-  <!-- Balances -->
-  <h3>Balances</h3>
-  <button onclick="fetchBalances()">Show Balances</button>
-  <pre id="balancesOutput"></pre>
+    <!-- Balances -->
+    <section>
+      <h2>Balances</h2>
+      <button onclick="fetchBalances()">🔄 Refresh Balances</button>
+      <pre id="balancesOutput">Loading balances...</pre>
+    </section>
 
-  <hr>
+    <hr />
 
-  <!-- Settlements -->
-  <h3>Settlements</h3>
-  <button onclick="fetchSettlements()">Show Settlements</button>
-  <pre id="settlementsOutput"></pre>
+    <!-- Settlements -->
+    <section>
+      <h2>Settlements</h2>
+      <button onclick="fetchSettlements()">🔄 Refresh Settlements</button>
+      <pre id="settlementsOutput">Loading settlements...</pre>
+    </section>
 
-  <script src="/static/script.js"></script>
+    <hr />
+
+    <!-- Logout -->
+    <button onclick="logout()">🚪 Logout</button>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
