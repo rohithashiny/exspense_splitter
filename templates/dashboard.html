@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Expense Splitter</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h2>Welcome to Expense Splitter Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+
+  <hr>
+
+  <!-- Add Expense -->
+  <h3>Add Expense</h3>
+  <form id="expenseForm">
+    <input type="number" name="amount" placeholder="Amount" required><br>
+    <input type="text" name="description" placeholder="Description"><br>
+
+    <label>Paid by:</label><br>
+    <select id="paidBy" name="paid_by" required></select><br>
+
+    <label>Select Participants:</label><br>
+    <div id="participantsList"></div>
+
+    <button type="submit">Add Expense</button>
+  </form>
+
+  <hr>
+
+  <!-- Balances -->
+  <h3>Balances</h3>
+  <button onclick="fetchBalances()">Show Balances</button>
+  <pre id="balancesOutput"></pre>
+
+  <hr>
+
+  <!-- Settlements -->
+  <h3>Settlements</h3>
+  <button onclick="fetchSettlements()">Show Settlements</button>
+  <pre id="settlementsOutput"></pre>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
