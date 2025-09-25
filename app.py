@@ -15,6 +15,11 @@ def get_user_id(username):
     row = cur.fetchone()
     conn.close()
     return row["id"] if row else None
+
+@app.route("/")
+def home():
+    return "<h1>Welcome to Expense Splitter</h1><p><a href='/signup-page'>Signup</a> | <a href='/login-page'>Login</a></p>"
+
 # Serve Signup Page
 @app.route('/signup-page')
 def signup_page():
