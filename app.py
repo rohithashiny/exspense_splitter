@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from db import get_conn, init_db
 import bcrypt
+import sqlite3
 
 
 app = Flask(__name__)
@@ -420,3 +421,6 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
+@app.route("/")
+def home():
+    return "<h1>Welcome to Expense Splitter</h1><p>Go to <a href='/signup-page'>Signup</a> or <a href='/login-page'>Login</a></p>"
